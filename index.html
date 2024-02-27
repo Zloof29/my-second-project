@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY – AJAX Task</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body class="text-bg-primary">
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Information About Countries</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mt-3">
+                <input type="text" class="form-control w-50 d-inline mx-auto" placeholder="Search for country...">
+                <button id="displayAllButton" class="btn btn-dark mb-1">Display All</button>
+                <table id="table" class="table table-striped table-bordered table-hover">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4 text-center mt-3">
+                <div id="totalPopulation"></div>
+            </div>
+
+            <div class="col-4 text-center mt-3">
+                <div id="averagePopulation"></div>
+            </div>
+
+            <div class="col-4 text-center mt-3">
+                <div id="totalOfCountries"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center w-50 mt-2">
+                <table id="table" class="table table-striped table-bordered table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Name</th>
+                            <th>Population</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-primary"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center mt-2">
+                <table class="table table-striped table-bordered table-hover" id="regionTable">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Region</th>
+                            <th>Number of Countries</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-primary">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center mt-2">
+                <table id="currencieTable" class="table table-striped table-bordered table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Currency</th>
+                            <th>Number of Countries</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-primary"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="dist/script.js"></script>
+</body>
+</html>
